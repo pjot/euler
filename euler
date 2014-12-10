@@ -1,0 +1,4 @@
+#/bin/bash
+
+problem=$1
+python3 "problems/$problem.py"
