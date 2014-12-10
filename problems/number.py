@@ -6,3 +6,9 @@ def is_palindrome(n):
 
 def length(n):
     return len(str(n))
+
+def get_fraction_cycle(n):
+    for digits in range(1,1000):
+        if (10 ** digits - 1) % n == 0:
+            return digits
+    return 0
