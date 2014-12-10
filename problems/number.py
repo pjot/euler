@@ -3,3 +3,6 @@ def reverse(n):
 
 def is_palindrome(n):
     return n == reverse(n)
+
+def length(n):
+    return len(str(n))
