@@ -12,3 +12,8 @@ def get_fraction_cycle(n):
         if (10 ** digits - 1) % n == 0:
             return digits
     return 0
+
+def is_pandigital(number):
+    if '0' in number:
+        return False
+    return len(number) == 9 and '123456789'.strip(number) == ""
