@@ -17,3 +17,7 @@ def is_pandigital(number):
     if '0' in number:
         return False
     return len(number) == 9 and '123456789'.strip(number) == ""
+
+def get_subdigits(number, first, second, third):
+    s = str(number)
+    return int(s[first - 1] + s[second - 1] + s[third - 1])
