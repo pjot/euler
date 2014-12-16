@@ -40,7 +40,7 @@ def is_prime(n):
         return False
 
     # We only have to check up to sqrt(n)
-    max_value = int(math.sqrt(n))
+    max_value = int(math.sqrt(n)) + 1
     for i in range(3, max_value, 2):
         if n % i == 0:
             return False
